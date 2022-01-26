@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon.q16193;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -25,19 +25,19 @@ public class Q16193 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int cnt = Integer.parseInt(br.readLine());
 
-        ArrayList<Integer> arr = new ArrayList<>();
-        ArrayList<Integer> newArr = new ArrayList<>();
-        ArrayList<Integer> newArr2 = new ArrayList<>();
+        ArrayList<Long> arr = new ArrayList<>();
+        ArrayList<Long> newArr = new ArrayList<>();
+        ArrayList<Long> newArr2 = new ArrayList<>();
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i=0; i < cnt; i++){
-            arr.add(Integer.parseInt(st.nextToken()));
+            arr.add(Long.parseLong(st.nextToken()));
         }
 
         Collections.sort(arr);  //..1
 
-        Deque<Integer> dq = new ArrayDeque<>();
-        Deque<Integer> dq2 = new ArrayDeque<>();
+        Deque<Long> dq = new ArrayDeque<>();
+        Deque<Long> dq2 = new ArrayDeque<>();
         for (int i=0; i < arr.size(); i++){
             if (i == (cnt/2)) {
                 newArr.add(arr.get(i));  //..2
