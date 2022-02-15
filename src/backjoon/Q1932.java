@@ -17,13 +17,6 @@ public class Q1932 {
         arr = new int[N][N];
         dp = new int[N][N];
 
-        for (int i=0; i < N; i++){
-            for (int j=0; j < N; j++){
-                arr[i][j] = -1;
-                dp[i][j] = -1;
-            }
-        }
-
         //입력
         for (int i=0; i < N; i++){
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
